@@ -62,7 +62,7 @@ extension EmojiFeedbackView: View {
         emoji: FeedbackDetailDataModel.FeedbackEmojiModel,
         index: Int
     ) -> some View {
-        Image(emoji.imageName)
+        Image(emoji.imageName, bundle: .assessmentKit)
             .renderingMode(.template)
             .resizable()
             .scaledToFill()

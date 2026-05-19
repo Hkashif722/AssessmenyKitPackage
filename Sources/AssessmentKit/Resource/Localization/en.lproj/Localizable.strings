@@ -1,0 +1,27 @@
+/* AssessmentKit — English (default) */
+
+/* ImageUploaderView */
+"assessment.no_image_selected" = "No Image Selected";
+"assessment.choose_image"      = "Choose Image";
+"assessment.change_image"      = "Change Image";
+
+/* SelectableListItem */
+"assessment.your_answer"       = "Your Answer";
+
+/* SharedAssessmentSelectionTypeView */
+"assessment.no_options"        = "No options available";
+
+/* AssessmentImageSelection */
+"assessment.grid"              = "Grid";
+"assessment.list"              = "List";
+"assessment.view_style"        = "View Style";
+
+/* SharedAssessmentSubjectiveView */
+"assessment.enter_text"        = "Enter your answer here...";
+
+/* FeedbackDetailDataModel — emoji labels */
+"assessment.emoji.poor"        = "Poor";
+"assessment.emoji.fair"        = "Fair";
+"assessment.emoji.average"     = "Average";
+"assessment.emoji.good"        = "Good";
+"assessment.emoji.excellent"   = "Excellent";

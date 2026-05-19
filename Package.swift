@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "AssessmentKit",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v15)
     ],
@@ -14,10 +15,10 @@ let package = Package(
         )
     ],
     dependencies: [
-        // ⚠️ Replace with your actual SwiftUIUtilities remote URL + version/branch
         .package(
-            path: "/Users/kashifhussain/Desktop/OJT_New_Design/SwiftUIUtility/SwiftUIUtility"
-        )
+            url: "https://github.com/Hkashif722/SwiftUIUtility",
+            branch: "update"
+        ),
     ],
     targets: [
         .target(
@@ -25,7 +26,11 @@ let package = Package(
             dependencies: [
                 .product(name: "SwiftUIUtilities", package: "SwiftUIUtility")
             ],
-            path: "Sources/AssessmentKit"
+            path: "Sources/AssessmentKit",
+            resources: [
+//                .process("Resource/Media"),
+                .process("Resource/Localization")
+            ]
         ),
         .testTarget(
             name: "AssessmentKitTests",

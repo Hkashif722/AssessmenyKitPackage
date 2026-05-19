@@ -51,7 +51,7 @@ public struct SharesAssessmentBottomSegmentDataModel {
         public let colorState: SegmentColorState
 
         public init(
-            id: ID,
+            id: ID = UUID(),
             sequenceNo: Int,
             attempted: Bool = false,
             notAttempted: Bool = true,
