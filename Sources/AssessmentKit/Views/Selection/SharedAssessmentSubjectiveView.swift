@@ -10,6 +10,7 @@ public struct SharedAssessmentSubjectiveView: View {
     public var previousAnswer: String?
     public var maxCharacters: Int
     public var isDisabled: Bool
+    public var showTextCountProgressBar: Bool
     public var handleAnswer: ((String, Bool) -> Void)?
 
     @State private var subjectiveText: String = ""
@@ -18,11 +19,13 @@ public struct SharedAssessmentSubjectiveView: View {
         previousAnswer: String? = nil,
         maxCharacters: Int = 500,
         isDisabled: Bool = false,
+        showTextCountProgressBar: Bool = true,
         handleAnswer: ((String, Bool) -> Void)? = nil
     ) {
         self.previousAnswer = previousAnswer
         self.maxCharacters = maxCharacters
         self.isDisabled = isDisabled
+        self.showTextCountProgressBar = showTextCountProgressBar
         self.handleAnswer = handleAnswer
     }
 
@@ -49,9 +52,11 @@ public struct SharedAssessmentSubjectiveView: View {
 
     private var characterCountRow: some View {
         HStack(spacing: 10) {
-            ProgressView(value: Double(subjectiveText.count) / Double(maxCharacters))
-                .frame(width: 50, height: 4)
-                .tint(isAtLimit ? .red : .blue)
+            if showTextCountProgressBar {
+                ProgressView(value: Double(subjectiveText.count) / Double(maxCharacters))
+                    .frame(width: 50, height: 4)
+                    .tint(isAtLimit ? .red : .blue)
+            }
 
             Text("\(subjectiveText.count) / \(maxCharacters)")
                 .font(.subheadline)

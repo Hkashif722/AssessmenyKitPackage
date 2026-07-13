@@ -72,3 +72,20 @@ final class SegmentColorStateTests: XCTestCase {
         XCTAssertEqual(model.colorState, .notAttempted)
     }
 }
+
+// MARK: - Subjective View Tests
+
+final class SharedAssessmentSubjectiveViewTests: XCTestCase {
+
+    func test_textCountProgressBar_isShownByDefault() {
+        let view = SharedAssessmentSubjectiveView()
+
+        XCTAssertTrue(view.showTextCountProgressBar)
+    }
+
+    func test_textCountProgressBar_canBeHidden() {
+        let view = SharedAssessmentSubjectiveView(showTextCountProgressBar: false)
+
+        XCTAssertFalse(view.showTextCountProgressBar)
+    }
+}
