@@ -9,6 +9,7 @@ import SwiftUIUtilities
 public struct SharedAssessmentSubjectiveWithImageUploderView: View {
     public var previousAnswer: String?
     public var maxCharacters: Int
+    public var showTextCountProgressBar: Bool
     public var handleAnswer: ((String, Bool) -> Void)?
     public var imageURL: URL?
     public var handleImageSelectionURL: ((URL?) -> Void)?
@@ -18,12 +19,14 @@ public struct SharedAssessmentSubjectiveWithImageUploderView: View {
     public init(
         previousAnswer: String? = nil,
         maxCharacters: Int = 250,
+        showTextCountProgressBar: Bool = true,
         handleAnswer: ((String, Bool) -> Void)? = nil,
         imageURL: URL? = nil,
         handleImageSelectionURL: ((URL?) -> Void)? = nil
     ) {
         self.previousAnswer = previousAnswer
         self.maxCharacters = maxCharacters
+        self.showTextCountProgressBar = showTextCountProgressBar
         self.handleAnswer = handleAnswer
         self.imageURL = imageURL
         self.handleImageSelectionURL = handleImageSelectionURL
@@ -54,9 +57,11 @@ public struct SharedAssessmentSubjectiveWithImageUploderView: View {
 
     private var characterCountRow: some View {
         HStack(spacing: 10) {
-            ProgressView(value: Double(subjectiveText.count) / Double(maxCharacters))
-                .frame(width: 50, height: 4)
-                .tint(isAtLimit ? .red : .blue)
+            if showTextCountProgressBar {
+                ProgressView(value: Double(subjectiveText.count) / Double(maxCharacters))
+                    .frame(width: 50, height: 4)
+                    .tint(isAtLimit ? .red : .blue)
+            }
 
             Text("\(subjectiveText.count) / \(maxCharacters) characters")
                 .font(.subheadline)

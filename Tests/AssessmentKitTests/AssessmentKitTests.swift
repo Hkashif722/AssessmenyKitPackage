@@ -89,3 +89,20 @@ final class SharedAssessmentSubjectiveViewTests: XCTestCase {
         XCTAssertFalse(view.showTextCountProgressBar)
     }
 }
+
+final class SharedAssessmentSubjectiveWithImageUploderViewTests: XCTestCase {
+
+    func test_textCountProgressBar_isShownByDefault() {
+        let view = SharedAssessmentSubjectiveWithImageUploderView()
+
+        XCTAssertTrue(view.showTextCountProgressBar)
+    }
+
+    func test_textCountProgressBar_canBeHidden() {
+        let view = SharedAssessmentSubjectiveWithImageUploderView(
+            showTextCountProgressBar: false
+        )
+
+        XCTAssertFalse(view.showTextCountProgressBar)
+    }
+}
