@@ -36,7 +36,8 @@ public struct SharedAssessmentPreviewType: View {
             AssessmentVideoPreview(url: url)
 
         case (.some(.imageText), .some(let url)),
-             (.some(.image), .some(let url)):
+             (.some(.image), .some(let url)),
+             (.some(.subjectiveImage), .some(let url)):
             AssessmentImagePreviewView(url: url)
 
         case (.some(.textAudio), .some(let url)):

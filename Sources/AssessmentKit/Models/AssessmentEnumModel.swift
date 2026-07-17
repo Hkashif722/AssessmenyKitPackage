@@ -15,6 +15,7 @@ public enum ContentType: String, Codable {
     case textAudio           = "TextAudio"
     case objective           = "Objective"
     case subjective          = "Subjective"
+    case subjectiveImage     = "SubjectiveImage"
     case objectiveWithImage  = "ObjectiveImageOption"
     case subjectiveWithImage = "SubjectiveImageOption"
     case emoji               = "emoji"
@@ -27,16 +28,17 @@ public enum ContentType: String, Codable {
         }
         let rawValue = try container.decode(String.self)
         switch rawValue.lowercased() {
-        case "image":                self = .image
-        case "imagetext":            self = .imageText
-        case "textvideo":            self = .textVideo
-        case "textaudio":            self = .textAudio
-        case "objective":            self = .objective
-        case "subjective":           self = .subjective
-        case "objectiveimageoption": self = .objectiveWithImage
-        case "subjectiveimageoption":self = .subjectiveWithImage
-        case "emoji":                self = .emoji
-        default:                     self = .objective
+        case "image":                 self = .image
+        case "imagetext":             self = .imageText
+        case "textvideo":             self = .textVideo
+        case "textaudio":             self = .textAudio
+        case "objective":             self = .objective
+        case "subjective":            self = .subjective
+        case "subjectiveimage":       self = .subjectiveImage
+        case "objectiveimageoption":  self = .objectiveWithImage
+        case "subjectiveimageoption": self = .subjectiveWithImage
+        case "emoji":                 self = .emoji
+        default:                      self = .objective
         }
     }
 }
@@ -49,6 +51,7 @@ public extension ContentType {
         case .textVideo:           return "Text & Video"
         case .objective:           return "Objective"
         case .subjective:          return "Subjective"
+        case .subjectiveImage:     return "Subjective (with Image)"
         case .textAudio:           return "Text & Audio"
         case .subjectiveWithImage: return "Subjective with Image"
         case .objectiveWithImage:  return "Objective with Image"

@@ -35,6 +35,7 @@ public struct SharedAssessmentSelectionTypeView: View {
     public var previousAnswer: String?
     public var isSubjectiveTextViewDisabled: Bool
     public var handleSubjectiveAnswer: ((String, Bool) -> Void)?
+    public var maxCharacters: Int
 
     // MARK: - Image-option selection
 
@@ -65,6 +66,7 @@ public struct SharedAssessmentSelectionTypeView: View {
         previousAnswer: String? = nil,
         isSubjectiveTextViewDisabled: Bool = false,
         handleSubjectiveAnswer: ((String, Bool) -> Void)? = nil,
+        maxCharacters: Int = 500,
         handleImageSelection: ((SharedAssessmentOptionModel) -> Void)? = nil,
         imageURL: URL? = nil,
         handleImageSelectionURL: ((URL?) -> Void)? = nil,
@@ -83,6 +85,7 @@ public struct SharedAssessmentSelectionTypeView: View {
         self.previousAnswer = previousAnswer
         self.isSubjectiveTextViewDisabled = isSubjectiveTextViewDisabled
         self.handleSubjectiveAnswer = handleSubjectiveAnswer
+        self.maxCharacters = maxCharacters
         self.handleImageSelection = handleImageSelection
         self.imageURL = imageURL
         self.handleImageSelectionURL = handleImageSelectionURL
@@ -125,10 +128,12 @@ public struct SharedAssessmentSelectionTypeView: View {
                 noOptionsView
             }
 
-        // ── Subjective ──────────────────────────────────────────────────────
-        case .some(.subjective):
+        // ── Subjective (plain text, optionally with a reference image shown
+        //    separately by SharedAssessmentPreviewType) ─────────────────────
+        case .some(.subjective), .some(.subjectiveImage):
             SharedAssessmentSubjectiveView(
                 previousAnswer: previousAnswer,
+                maxCharacters: maxCharacters,
                 isDisabled: isSubjectiveTextViewDisabled,
                 handleAnswer: handleSubjectiveAnswer
             )
