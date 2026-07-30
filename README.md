@@ -104,6 +104,7 @@ struct QuestionView: View {
 
             // 3. Answer input — auto-routes to the correct child view
             SharedAssessmentSelectionTypeView(
+                questionID: question.id,
                 contentType: question.contentType,
                 options: question.options.map { OptionModel(title: $0.text) },
                 isSelected: { option in answer == option.title },

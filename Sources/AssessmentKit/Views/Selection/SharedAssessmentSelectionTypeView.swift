@@ -12,6 +12,10 @@ import SwiftUI
 /// picks the right child.
 public struct SharedAssessmentSelectionTypeView: View {
 
+    // MARK: - Question identity
+
+    private let questionID: AnyHashable?
+
     // MARK: - Content type
 
     public var contentType: ContentType?
@@ -55,6 +59,7 @@ public struct SharedAssessmentSelectionTypeView: View {
     // MARK: - Init
 
     public init(
+        questionID: AnyHashable?,
         contentType: ContentType?,
         options: [SharedAssessmentOptionModel]? = nil,
         optionType: OptionType? = nil,
@@ -74,6 +79,7 @@ public struct SharedAssessmentSelectionTypeView: View {
         getEmojiSelectionRating: (() -> Int)? = nil,
         handleEmojiSelection: ((Int) -> Void)? = nil
     ) {
+        self.questionID = questionID
         self.contentType = contentType
         self.options = options
         self.optionType = optionType
@@ -99,6 +105,7 @@ public struct SharedAssessmentSelectionTypeView: View {
     public var body: some View {
         VStack {
             selectionContent
+                .id(questionID)
             Spacer()
         }
     }
@@ -137,7 +144,6 @@ public struct SharedAssessmentSelectionTypeView: View {
                 isDisabled: isSubjectiveTextViewDisabled,
                 handleAnswer: handleSubjectiveAnswer
             )
-            .id(previousAnswer) // Forces TextField to reset when question changes
 
         // ── Image options ───────────────────────────────────────────────────
         case .some(.image):
