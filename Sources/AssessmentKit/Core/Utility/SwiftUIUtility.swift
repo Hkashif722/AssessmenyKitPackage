@@ -100,7 +100,7 @@ extension SwiftUIUtility {
 
     struct YouAnswerTextView: View {
         var body: some View {
-            Text("Your Answer")
+            Text("assessment.your_answer".localized)
                 .font(.caption)
                 .padding(.init(top: 2, leading: 10, bottom: 2, trailing: 10))
                 .background(Color(.gray).opacity(0.3))

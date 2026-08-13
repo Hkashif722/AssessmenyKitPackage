@@ -1,0 +1,18 @@
+/* AssessmentKit — ta */
+
+"assessment.no_image_selected" = "படம் எதுவும் தேர்ந்தெடுக்கப்படவில்லை";
+"assessment.choose_image" = "படத்தைத் தேர்ந்தெடுக்கவும்";
+"assessment.change_image" = "படத்தை மாற்றவும்";
+"assessment.your_answer" = "உங்கள் பதில்";
+"assessment.no_options" = "விருப்பத்தேர்வுகள் இல்லை";
+"assessment.grid" = "கட்டம்";
+"assessment.list" = "பட்டியல்";
+"assessment.view_style" = "காட்சி நடை";
+"assessment.enter_text" = "உங்கள் பதிலை இங்கே உள்ளிடவும்...";
+"assessment.emoji.poor" = "ஏழை";
+"assessment.emoji.fair" = "நியாயமான";
+"assessment.emoji.average" = "சராசரி";
+"assessment.emoji.good" = "நல்லது";
+"assessment.emoji.excellent" = "சிறப்பானது";
+"assessment.change_rating" = "மதிப்பீட்டை மாற்றவும்";
+"assessment.submit" = "மதிப்பீட்டை சமர்ப்பிக்கவும்";

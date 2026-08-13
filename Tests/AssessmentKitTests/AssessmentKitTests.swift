@@ -106,3 +106,36 @@ final class SharedAssessmentSubjectiveWithImageUploderViewTests: XCTestCase {
         XCTAssertFalse(view.showTextCountProgressBar)
     }
 }
+
+final class AssessmentKitLocalizationTests: XCTestCase {
+
+    override func tearDown() {
+        AssessmentKitLocalization.configure(languageCode: "en")
+        super.tearDown()
+    }
+
+    func test_allConfiguredAppLanguagesResolvePackageStrings() {
+        let nonEnglishLocales = [
+            "ar", "as", "bn", "hi", "kn", "ml", "mr", "or", "ta", "te", "ur-IN"
+        ]
+
+        for languageCode in nonEnglishLocales {
+            AssessmentKitLocalization.configure(languageCode: languageCode)
+            XCTAssertNotEqual(
+                "assessment.no_options".localized,
+                "No options available",
+                "Expected an AssessmentKit translation for \(languageCode)"
+            )
+        }
+    }
+
+    func test_dynamicModelsFollowRuntimeLanguageChanges() {
+        AssessmentKitLocalization.configure(languageCode: "en")
+        let english = FeedbackDetailDataModel.FeedbackEmojiModel.feedbackEmojis[0].label
+
+        AssessmentKitLocalization.configure(languageCode: "hi")
+        let hindi = FeedbackDetailDataModel.FeedbackEmojiModel.feedbackEmojis[0].label
+
+        XCTAssertNotEqual(hindi, english)
+    }
+}

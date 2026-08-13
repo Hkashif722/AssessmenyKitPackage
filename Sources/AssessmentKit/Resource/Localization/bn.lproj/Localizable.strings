@@ -1,0 +1,18 @@
+/* AssessmentKit — bn */
+
+"assessment.no_image_selected" = "কোনো ছবি নির্বাচন করা হয়নি";
+"assessment.choose_image" = "ছবি নির্বাচন করুন";
+"assessment.change_image" = "ছবি পরিবর্তন করুন";
+"assessment.your_answer" = "আপনার উত্তর";
+"assessment.no_options" = "কোন বিকল্প উপলব্ধ";
+"assessment.grid" = "গ্রিড";
+"assessment.list" = "তালিকা";
+"assessment.view_style" = "প্রদর্শন শৈলী";
+"assessment.enter_text" = "এখানে আপনার উত্তর লিখুন...";
+"assessment.emoji.poor" = "দরিদ্র";
+"assessment.emoji.fair" = "মেলা";
+"assessment.emoji.average" = "গড়";
+"assessment.emoji.good" = "ভাল";
+"assessment.emoji.excellent" = "চমৎকার";
+"assessment.change_rating" = "রেটিং পরিবর্তন করুন";
+"assessment.submit" = "মূল্যায়ন জমা দিন";

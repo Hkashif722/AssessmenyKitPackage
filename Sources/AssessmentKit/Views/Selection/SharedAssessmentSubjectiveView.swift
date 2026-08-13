@@ -33,7 +33,7 @@ public struct SharedAssessmentSubjectiveView: View {
         VStack(alignment: .trailing, spacing: 16) {
             SwiftUIUtility.MultilineTextInputField(
                 initialText: previousAnswer ?? "",
-                placeholder: "EntrTxtMsg".localized,
+                placeholder: "assessment.enter_text".localized,
                 maxCharacters: maxCharacters,
                 isDisabled: isDisabled
             ) { updatedText, isDebounce in

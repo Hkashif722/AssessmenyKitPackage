@@ -1,0 +1,18 @@
+/* AssessmentKit — ar */
+
+"assessment.no_image_selected" = "لا توجد صورة محددة";
+"assessment.choose_image" = "اختر صورة";
+"assessment.change_image" = "تغيير الصورة";
+"assessment.your_answer" = "إجابتك";
+"assessment.no_options" = "لا توجد خيارات متاحة";
+"assessment.grid" = "شبكة";
+"assessment.list" = "قائمة";
+"assessment.view_style" = "نمط العرض";
+"assessment.enter_text" = "أدخل إجابتك هنا...";
+"assessment.emoji.poor" = "فقير";
+"assessment.emoji.fair" = "عادل";
+"assessment.emoji.average" = "متوسط";
+"assessment.emoji.good" = "جيد";
+"assessment.emoji.excellent" = "ممتاز";
+"assessment.change_rating" = "تغيير التقييم";
+"assessment.submit" = "إرسال التقييم";

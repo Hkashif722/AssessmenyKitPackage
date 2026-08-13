@@ -1,0 +1,18 @@
+/* AssessmentKit — as */
+
+"assessment.no_image_selected" = "কোনো ছবি নিৰ্বাচিত কৰা হোৱা নাই";
+"assessment.choose_image" = "ছবি বাছনি কৰক";
+"assessment.change_image" = "ছবি সলনি কৰক";
+"assessment.your_answer" = "আপোনাৰ উত্তৰ";
+"assessment.no_options" = "কোনো বিকল্প উপলব্ধ নহয়";
+"assessment.grid" = "গ্ৰীড";
+"assessment.list" = "তালিকা";
+"assessment.view_style" = "দৃশ্য শৈলী";
+"assessment.enter_text" = "আপোনাৰ উত্তৰ ইয়াত লিখক...";
+"assessment.emoji.poor" = "দুখীয়া";
+"assessment.emoji.fair" = "মেলা";
+"assessment.emoji.average" = "গড়";
+"assessment.emoji.good" = "ভাল";
+"assessment.emoji.excellent" = "চমৎকাৰ";
+"assessment.change_rating" = "ৰেটিং সলনি কৰক";
+"assessment.submit" = "মূল্যায়ন দাখিল কৰক";

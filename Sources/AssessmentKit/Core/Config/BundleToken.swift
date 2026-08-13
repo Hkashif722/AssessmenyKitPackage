@@ -14,5 +14,11 @@ import Foundation
 private class BundleToken {}
 
 public extension Bundle {
-    static let assessmentKit: Bundle = Bundle(for: BundleToken.self)
+    static let assessmentKit: Bundle = {
+        #if SWIFT_PACKAGE
+        return Bundle.module
+        #else
+        return Bundle(for: BundleToken.self)
+        #endif
+    }()
 }

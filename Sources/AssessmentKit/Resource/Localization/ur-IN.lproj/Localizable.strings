@@ -1,0 +1,18 @@
+/* AssessmentKit — ur-IN */
+
+"assessment.no_image_selected" = "کوئی تصویر منتخب نہیں کی گئی";
+"assessment.choose_image" = "تصویر منتخب کریں";
+"assessment.change_image" = "تصویر تبدیل کریں";
+"assessment.your_answer" = "آپ کا جواب";
+"assessment.no_options" = "کوئی اختیارات دستیاب نہیں ہیں۔";
+"assessment.grid" = "گرڈ";
+"assessment.list" = "فہرست";
+"assessment.view_style" = "دیکھنے کا انداز";
+"assessment.enter_text" = "اپنا جواب یہاں درج کریں...";
+"assessment.emoji.poor" = "غریب";
+"assessment.emoji.fair" = "میلہ";
+"assessment.emoji.average" = "اوسط";
+"assessment.emoji.good" = "اچھا";
+"assessment.emoji.excellent" = "بہترین";
+"assessment.change_rating" = "درجہ بندی تبدیل کریں";
+"assessment.submit" = "جائزہ جمع کریں";

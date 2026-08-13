@@ -1,0 +1,18 @@
+/* AssessmentKit — ml */
+
+"assessment.no_image_selected" = "ചിത്രമൊന്നും തിരഞ്ഞെടുത്തിട്ടില്ല";
+"assessment.choose_image" = "ചിത്രം തിരഞ്ഞെടുക്കുക";
+"assessment.change_image" = "ചിത്രം മാറ്റുക";
+"assessment.your_answer" = "നിങ്ങളുടെ ഉത്തരം";
+"assessment.no_options" = "ഓപ്ഷനുകളൊന്നും ലഭ്യമല്ല";
+"assessment.grid" = "ഗ്രിഡ്";
+"assessment.list" = "പട്ടിക";
+"assessment.view_style" = "കാഴ്ചാ ശൈലി";
+"assessment.enter_text" = "നിങ്ങളുടെ ഉത്തരം ഇവിടെ നൽകുക...";
+"assessment.emoji.poor" = "പാവം";
+"assessment.emoji.fair" = "മേള";
+"assessment.emoji.average" = "ശരാശരി";
+"assessment.emoji.good" = "നല്ലത്";
+"assessment.emoji.excellent" = "മികച്ചത്";
+"assessment.change_rating" = "റേറ്റിംഗ് മാറ്റുക";
+"assessment.submit" = "മൂല്യനിർണ്ണയം സമർപ്പിക്കുക";

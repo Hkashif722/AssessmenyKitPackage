@@ -1,0 +1,18 @@
+/* AssessmentKit — te */
+
+"assessment.no_image_selected" = "ఏ చిత్రం ఎంచుకోబడలేదు";
+"assessment.choose_image" = "చిత్రాన్ని ఎంచుకోండి";
+"assessment.change_image" = "చిత్రాన్ని మార్చండి";
+"assessment.your_answer" = "మీ సమాధానం";
+"assessment.no_options" = "ఎంపికలు అందుబాటులో లేవు";
+"assessment.grid" = "గ్రిడ్";
+"assessment.list" = "జాబితా";
+"assessment.view_style" = "వీక్షణ శైలి";
+"assessment.enter_text" = "మీ సమాధానాన్ని ఇక్కడ నమోదు చేయండి...";
+"assessment.emoji.poor" = "పేద";
+"assessment.emoji.fair" = "న్యాయమైన";
+"assessment.emoji.average" = "సగటు";
+"assessment.emoji.good" = "బాగుంది";
+"assessment.emoji.excellent" = "అద్భుతమైన";
+"assessment.change_rating" = "రేటింగ్ మార్చండి";
+"assessment.submit" = "మూల్యాంకనాన్ని సమర్పించండి";

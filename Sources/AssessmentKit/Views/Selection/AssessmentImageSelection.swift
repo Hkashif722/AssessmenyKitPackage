@@ -43,9 +43,9 @@ extension AssessmentImageSelection: View {
     @ViewBuilder
     private var segmentControllerView: some View {
         if applySegment {
-            Picker("View Style", selection: $isGridView) {
-                Text("Grid").tag(true)
-                Text("List").tag(false)
+            Picker("assessment.view_style".localized, selection: $isGridView) {
+                Text("assessment.grid".localized).tag(true)
+                Text("assessment.list".localized).tag(false)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding()

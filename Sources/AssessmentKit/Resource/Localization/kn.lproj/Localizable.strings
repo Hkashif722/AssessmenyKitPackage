@@ -1,0 +1,18 @@
+/* AssessmentKit — kn */
+
+"assessment.no_image_selected" = "ಯಾವುದೇ ಚಿತ್ರವನ್ನು ಆಯ್ಕೆ ಮಾಡಿಲ್ಲ";
+"assessment.choose_image" = "ಚಿತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ";
+"assessment.change_image" = "ಚಿತ್ರವನ್ನು ಬದಲಾಯಿಸಿ";
+"assessment.your_answer" = "ನಿಮ್ಮ ಉತ್ತರ";
+"assessment.no_options" = "ಯಾವುದೇ ಆಯ್ಕೆಗಳು ಲಭ್ಯವಿಲ್ಲ";
+"assessment.grid" = "ಗ್ರಿಡ್";
+"assessment.list" = "ಪಟ್ಟಿ";
+"assessment.view_style" = "ವೀಕ್ಷಣೆ ಶೈಲಿ";
+"assessment.enter_text" = "ನಿಮ್ಮ ಉತ್ತರವನ್ನು ಇಲ್ಲಿ ನಮೂದಿಸಿ...";
+"assessment.emoji.poor" = "ಬಡವ";
+"assessment.emoji.fair" = "ನ್ಯಾಯೋಚಿತ";
+"assessment.emoji.average" = "ಸರಾಸರಿ";
+"assessment.emoji.good" = "ಒಳ್ಳೆಯದು";
+"assessment.emoji.excellent" = "ಅತ್ಯುತ್ತಮ";
+"assessment.change_rating" = "ರೇಟಿಂಗ್ ಬದಲಾಯಿಸಿ";
+"assessment.submit" = "ಮೌಲ್ಯಮಾಪನವನ್ನು ಸಲ್ಲಿಸಿ";

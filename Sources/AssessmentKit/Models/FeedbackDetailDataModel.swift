@@ -19,12 +19,14 @@ public struct FeedbackDetailDataModel {
             self.ratingValue = ratingValue
         }
 
-        public static let feedbackEmojis: [FeedbackEmojiModel] = [
-            .init(imageName: "emoji_sad",     label: "Poor",      ratingValue: 1),
-            .init(imageName: "emoji_fair",    label: "Fair",      ratingValue: 2),
-            .init(imageName: "emoji_neutral", label: "Average",   ratingValue: 3),
-            .init(imageName: "emoji_smiling", label: "Good",      ratingValue: 4),
-            .init(imageName: "emoji_happy",   label: "Excellent", ratingValue: 5)
-        ]
+        public static var feedbackEmojis: [FeedbackEmojiModel] {
+            [
+                .init(imageName: "emoji_sad", label: "assessment.emoji.poor".localized, ratingValue: 1),
+                .init(imageName: "emoji_fair", label: "assessment.emoji.fair".localized, ratingValue: 2),
+                .init(imageName: "emoji_neutral", label: "assessment.emoji.average".localized, ratingValue: 3),
+                .init(imageName: "emoji_smiling", label: "assessment.emoji.good".localized, ratingValue: 4),
+                .init(imageName: "emoji_happy", label: "assessment.emoji.excellent".localized, ratingValue: 5)
+            ]
+        }
     }
 }

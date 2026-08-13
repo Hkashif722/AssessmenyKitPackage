@@ -23,8 +23,8 @@ public struct ImageUploaderView: View {
 
     public init(
         _ imageURL: URL?,
-        placeholderText: String = "No Image Selected",
-        buttonText: String = "Choose Image",
+        placeholderText: String = "assessment.no_image_selected".localized,
+        buttonText: String = "assessment.choose_image".localized,
         onImageSelected: ((UIImage, URL?) -> Void)? = nil
     ) {
         self._remoteImageURL = State(wrappedValue: imageURL)
@@ -84,7 +84,7 @@ public struct ImageUploaderView: View {
 
     private var uploadButton: some View {
         PhotosPicker(selection: $selectedItem, matching: .images) {
-            Text(hasImage ? "Change Image" : buttonText)
+            Text(hasImage ? "assessment.change_image".localized : buttonText)
                 .font(.callout)
                 .padding(8)
                 .background(hasImage ? Color.blue.opacity(0.2) : Color.gray.opacity(0.2))

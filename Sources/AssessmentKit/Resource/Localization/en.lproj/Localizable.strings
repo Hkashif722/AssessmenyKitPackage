@@ -25,3 +25,5 @@
 "assessment.emoji.average"     = "Average";
 "assessment.emoji.good"        = "Good";
 "assessment.emoji.excellent"   = "Excellent";
+"assessment.change_rating"     = "Change Rating";
+"assessment.submit"            = "Submit Evaluation";

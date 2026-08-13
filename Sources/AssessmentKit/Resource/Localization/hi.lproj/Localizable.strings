@@ -1,0 +1,18 @@
+/* AssessmentKit — hi */
+
+"assessment.no_image_selected" = "कोई छवि चयनित नहीं है";
+"assessment.choose_image" = "छवि चुनें";
+"assessment.change_image" = "छवि बदलें";
+"assessment.your_answer" = "आपका उत्तर";
+"assessment.no_options" = "कोई विकल्प उपलब्ध नहीं है";
+"assessment.grid" = "ग्रिड";
+"assessment.list" = "सूची";
+"assessment.view_style" = "दृश्य शैली";
+"assessment.enter_text" = "अपना उत्तर यहाँ दर्ज करें...";
+"assessment.emoji.poor" = "गरीब";
+"assessment.emoji.fair" = "निष्पक्ष";
+"assessment.emoji.average" = "औसत";
+"assessment.emoji.good" = "अच्छा";
+"assessment.emoji.excellent" = "बहुत बढ़िया";
+"assessment.change_rating" = "रेटिंग बदलें";
+"assessment.submit" = "मूल्यांकन जमा करें";

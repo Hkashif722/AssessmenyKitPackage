@@ -36,7 +36,7 @@ public struct SharedAssessmentBottomControlView<ID: Hashable>: View {
         totalQuestions: Int,
         isFirstQuestion: Bool,
         isLastQuestion: Bool,
-        submitButtonText: String = "submitEvalution".localized,
+        submitButtonText: String = "assessment.submit".localized,
         isShowNextPreviousControl: Bool = true,
         isSubmitButtonEnabled: Bool = true,
         bottomSegmentDataModel: [SharesAssessmentBottomSegmentDataModel.SegmentDataInfoModel<ID>] = [],

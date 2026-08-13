@@ -14,7 +14,9 @@ public struct EmojiFeedbackView {
     public var getRatingValue: (() -> Int)?
     public var onFeedbackSelect: ((_ ratingValue: Int) -> Void)?
 
-    public let feedbackEmojis: [FeedbackDetailDataModel.FeedbackEmojiModel] = FeedbackDetailDataModel.FeedbackEmojiModel.feedbackEmojis
+    public var feedbackEmojis: [FeedbackDetailDataModel.FeedbackEmojiModel] {
+        FeedbackDetailDataModel.FeedbackEmojiModel.feedbackEmojis
+    }
 
     public init(
         feedbackEmojiSelectable: Bool = true,
@@ -114,7 +116,7 @@ extension EmojiFeedbackView: View {
         }
         .padding()
 
-        Button("Change Rating") {
+        Button("assessment.change_rating".localized) {
             rating = 4
         }
     }

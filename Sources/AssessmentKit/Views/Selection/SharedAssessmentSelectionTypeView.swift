@@ -196,7 +196,7 @@ public struct SharedAssessmentSelectionTypeView: View {
     }
 
     private var noOptionsView: some View {
-        Text("No options available")
+        Text("assessment.no_options".localized)
             .foregroundColor(.gray)
             .italic()
     }
